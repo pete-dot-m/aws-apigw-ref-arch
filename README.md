@@ -11,4 +11,10 @@ This project demonstrates how to set up an API Gateway and related infrastructur
 
  *Or*
 
-- opentofu: Ensure you have OpenTofu installed on your local machine. You can download it from the [OpenTofu website](https://opentofu.org/download.html).
+- OpenTofu (preferred): Ensure you have OpenTofu installed on your local machine. You can download it from the [OpenTofu website](https://opentofu.org/download.html).
+
+### Getting Started ###
+
+*Backend*
+
+The project uses a shared S3/DynamoDB backend to manage the Terraform state and locks. The [remote-state](./remote-state/README.md) directory contains the necessary configurations for setting up this backend. This sub project should be initialized and applied first to create the backend resources.
