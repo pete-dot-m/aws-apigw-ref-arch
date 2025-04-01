@@ -1,6 +1,7 @@
 # Terraform
 *.tfstate
 *.tfstate.*
+.tfplan
 crash.log
 crash.*.log
 *.tfvars
@@ -10,6 +11,7 @@ override.tf.json
 *_override.tf.json
 .terraform/
 .terraform.lock.hcl
+remote-state.json
 
 # JetBrains WebStorm
 .idea/
